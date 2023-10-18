@@ -16,27 +16,21 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import {NetflixCard} from './src/components/NetflixCard';
 
 function App(): JSX.Element {
   return (
-    // <SafeAreaView>
-      <View style={styles.container}>
-        <Text style={styles.text}>hello world</Text>
-      </View>
-    // </SafeAreaView>
+    
+    <View style={styles.container}>
+      <NetflixCard />
+    </View>
+
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: "red",
-  },
-  text: {
-    color: 'green',
-  },
+  container: {},
+
 });
 
 export default App;
