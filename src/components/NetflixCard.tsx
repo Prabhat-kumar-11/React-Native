@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 export const NetflixCard = () => {
   return (
@@ -17,6 +17,9 @@ export const NetflixCard = () => {
       <Text style={styles.description}>
         A suspenseful thriller featuring an all-star cast. Watch as two elite assassins are hunted down in this action-packed movie.
       </Text>
+      <TouchableOpacity style={styles.buttonContainer}>
+        <Text style={styles.buttonText}>Watch Now</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -41,6 +44,17 @@ const styles = StyleSheet.create({
   description: {
     marginTop: 10,
     fontSize: 16,
+    textAlign: 'center',
+  },
+  buttonContainer: {
+    backgroundColor: 'red',
+    padding: 10,
+    borderRadius: 5,
+    marginTop: 10,
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 18,
     textAlign: 'center',
   },
 });
